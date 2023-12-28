@@ -19,17 +19,18 @@ VITE_X_RAPID_API_KEY='your-api-key'
 npm install
 ```
 
-### Run development server
+## Run development server (with Vite)
 
 ```bash
 npm run dev
 ```
 
-## Docker (under development)
+## Run development server (with Docker)
 
-Ensure you have Docker installed on your machine, then run the following 
+Ensure you have Docker installed on your machine, then run the following; 
 
 ```bash
-chmod +x run_docker.sh
-./run_docker.sh
+docker build -t programmerske-web_frontend .
+
+docker run -d -p 5173:5173 programmerske-web_frontend
 ```
