@@ -11,7 +11,7 @@ VITE_X_RAPID_API_HOST='judge0-ce.p.rapidapi.com'
 VITE_X_RAPID_API_URL='https://judge0-ce.p.rapidapi.com/submissions'
 VITE_X_RAPID_API_KEY='your-api-key'
 ```
-<!-- NOTE: The above variables are still under development. However, make use of your own API keys, which you can get from [RapidAPI](https://rapidapi.com/). -->
+<!-- NOTE: The above variables are still under development. However, make use of your own API keys, which you can get from [RapidAPI](https://rapidapi.com/). Furthermore, the commands take into consideration the use of Vite in the tech stack, but this may change in the future-->
 
 ### Install dependencies
 
@@ -19,17 +19,18 @@ VITE_X_RAPID_API_KEY='your-api-key'
 npm install
 ```
 
-### Run development server
+## Run development server (with Vite)
 
 ```bash
 npm run dev
 ```
 
-## Docker (under development)
+## Run development server (with Docker)
 
-Ensure you have Docker installed on your machine, then run the following 
+Ensure you have Docker installed on your machine, then run the following; 
 
 ```bash
-chmod +x run_docker.sh
-./run_docker.sh
+docker build -t programmerske-web_frontend .
+
+docker run -d -p 5173:5173 programmerske-web_frontend
 ```
