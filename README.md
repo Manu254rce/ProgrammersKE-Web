@@ -32,5 +32,5 @@ Ensure you have Docker installed on your machine, then run the following;
 ```bash
 docker build -t programmerske-web_frontend .
 
-docker run -d -p 5174:5173 programmerske-web_frontend
+docker run -d -p 5173:5173 programmerske-web_frontend
 ```
